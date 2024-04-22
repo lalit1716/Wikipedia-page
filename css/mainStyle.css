@@ -1,0 +1,335 @@
+/* Header style startts here 👇 */
+
+header {
+  padding: 10px 0 0 0;
+}
+
+header .container {
+  border-bottom: 1px solid #999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-wrapper ul {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 999;
+
+  width: 200px;
+  /* border: 2px solid red; */
+  box-shadow: 0 0 10px #333;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.menu-active{
+  display: none;
+}
+.menu-hide{
+  display: block;
+}
+
+.menu-opt-list {
+  margin-top: 10px;
+}
+
+.menu-opt-list a {
+  text-decoration: none;
+}
+.menu-opt-list a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper a {
+  text-decoration: none;
+}
+
+.login-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* main setion style starts here  */
+
+/* Heading section style starts here 👇 */
+
+.heading-section .container {
+  border-bottom: 1px solid #999999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 5px 10px;
+}
+
+.language-wrapper img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Tools section style starts here  */
+
+.tools-section .container {
+  border-bottom: 1px solid #999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tools-left-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.tools-list a {
+  text-decoration: none;
+}
+
+.tools-list a:is(:hover, :focus) {
+  text-decoration: underline;
+  color: var(--colorBlack);
+}
+
+.tools-right-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hero section style starts here  */
+
+.hero-section {
+  padding: 0 0 50px 0;
+}
+
+.hero-text-wrapper {
+  padding: 0 150px;
+}
+
+.hero-image-wrapper {
+  padding: 0 150px;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image-container img {
+  height: 50vh;
+  transition: 0.2s;
+}
+
+.hero-image-container img:hover {
+  height: 60vh;
+  scale: 1.3em;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000;
+}
+
+.hero-img-gradient {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #00000085;
+  display: none;
+}
+
+.hero-image-container:hover .hero-img-gradient {
+  display: block;
+}
+
+/* Etymology section style starts here  */
+.etymology-section {
+  padding: 50px 0 0 0;
+}
+
+/* List of jackets section style starts here  */
+.jacket-list-section {
+  padding: 50px 0 0 0;
+}
+
+.jacket-list-option a {
+  text-decoration: none;
+}
+
+.jacket-list-option a:hover {
+  text-decoration: underline;
+}
+
+/* See also section style starts here */
+.see-also-section {
+  padding: 50px 0 0 0;
+}
+
+.see-also-list a {
+  text-decoration: none;
+}
+
+.see-also-list a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery section style starts here */
+
+.gallery-section {
+  padding: 50px 0 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  overflow: hidden;
+}
+
+.gallery-slider {
+  margin-top: 50px;
+  width: calc(250px * 24);
+  display: flex;
+
+  animation: slide 40s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 12));
+  }
+}
+
+.slide-wrapper img {
+  height: 250px;
+  width: 220px;
+}
+
+.slide-wrapper img:hover {
+  height: 290px;
+  width: 270px;
+  box-shadow: 0 0 20px #333;
+  border-radius: 10px;
+}
+
+.slide-wrapper {
+  height: 250px;
+  width: 250px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* References section style starts here */
+
+.references-section {
+  padding: 50px 0 0 0;
+}
+
+.references-list {
+  margin-bottom: 10px;
+}
+
+.references-list a {
+  text-decoration: none;
+}
+
+.references-list a:hover {
+  text-decoration: underline;
+}
+
+/* External links section style starts here */
+
+.external-link-section {
+  padding: 50px 0;
+}
+
+.external-link-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.external-link-heading a {
+  text-decoration: none;
+}
+
+.external-link-heading a:hover {
+  text-decoration: underline;
+}
+
+.external-link-list {
+  border: 1px solid #999;
+  padding: 5px;
+}
+
+.external-list-wrapper {
+  background-color: #ccccff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer section style starts here  */
+
+footer {
+  padding: 0 0 50px 0;
+}
+
+footer .container {
+  padding-top: 20px;
+  border-top: 1px solid #999;
+}
+
+.footer-links-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links-wrapper ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+.footer-links-wrapper ul li a {
+  text-decoration: none;
+}
+
+.footer-links-wrapper ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-icon-wrapper{
+  display: flex;
+  align-items: center;
+}
